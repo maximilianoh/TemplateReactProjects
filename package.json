@@ -1,0 +1,77 @@
+{
+  "name": "Template",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --env.development --progress",
+    "build": "webpack --env.production --progress",
+    "test": "jest",
+    "doc": "node frontend/styleguidist.js",
+    "styleguide": "npx styleguidist build",
+    "api": "node backend/apiFakeDB/api.js false"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/runtime": "^7.7.7",
+    "@loadable/component": "^5.11.0",
+    "axios": "^0.19.0",
+    "babel-loader": "^8.0.6",
+    "body-parser": "^1.19.0",
+    "chalk": "^3.0.0",
+    "core-js": "^3.6.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "json-server": "^0.15.1",
+    "open": "^7.0.0",
+    "prop-types": "^15.6.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "reload": "^3.0.3",
+    "shortid": "^2.2.15",
+    "webpack": "^4.41.4"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.7.6",
+    "@testing-library/react": "^9.4.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "jest": "^24.9.0",
+    "nodemon": "^2.0.2",
+    "react-styleguidist": "^10.3.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-hot-middleware": "^2.25.0"
+  },
+  "jest": {
+    "rootDir": "./",
+    "roots": [
+      "<rootDir>/test"
+    ],
+    "verbose": false,
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "globals": {
+      "NODE_ENV": "test"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "moduleNameMapper": {
+      "components(.*)$": "<rootDir>/frontend/src/$1"
+    }
+  }
+}

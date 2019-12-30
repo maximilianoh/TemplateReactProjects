@@ -1,0 +1,66 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  color: #3b4252;
+  letter-spacing: 0;
+}
+
+nav {
+  background-color: #43a047;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+nav li.title {
+  flex-grow: 5;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #3b4252;
+  padding-left: 3%;
+}
+
+
+nav li {
+  flex-grow: 1;
+  align-self: center;
+  text-align: right;
+  color: #4c566a;
+}
+
+.fa-heart {
+  color: deeppink;
+}
+
+.fa, .fab, .fal, .far, .fas {
+  line-height: inherit;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 608px)  {
+  nav li.title {
+    flex-grow: 1;
+    text-align: left;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #3b4252;
+  }
+
+  nav ul  a {
+    padding: 0px 3px;
+  }
+}

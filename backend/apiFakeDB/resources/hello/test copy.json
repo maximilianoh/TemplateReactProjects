@@ -1,0 +1,11 @@
+{
+    "path":"/test/test2",
+    "method":"POST",
+    "parameters":{
+        "text2":""
+    },
+    "description":"Test Text",
+    "data":{
+        "msg":"Success!"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "path":"/hello/test",
+    "method":"POST",
+    "parameters":{
+        "text":""
+    },
+    "description":"Traer Texto De Prueba",
+    "data":""
+}

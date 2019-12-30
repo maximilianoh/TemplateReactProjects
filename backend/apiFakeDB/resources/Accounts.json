@@ -1,0 +1,29 @@
+{
+	"path": "/cuentas",
+	"description":"traer cuentas",
+	"method":"GET",
+	"data": {
+		"users": [
+			{
+				"id": "1",
+				"name": "XXXXXXXXX"
+			},
+			{
+				"id": "2",
+				"name": "XXXXXXXXX"
+			},
+			{
+				"id": "3",
+				"name": "XXXXXXXXX"
+			},
+			{
+				"id": "4",
+				"name": "XXXXXXXXX"
+			},
+			{
+				"id": "5",
+				"name": "XXXXXXXXX"
+			}
+		]		
+	}
+}
